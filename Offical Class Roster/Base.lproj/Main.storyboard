@@ -17,21 +17,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="hXS-Lf-zU8">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="hXS-Lf-zU8">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="600" id="Gw1-dn-64s"/>
-                                    <constraint firstAttribute="height" constant="600" id="oQT-EC-JiW"/>
+                                    <constraint firstAttribute="height" constant="600" id="cuP-Qx-QgI"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="q6U-7B-jJg">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="100" id="q6U-7B-jJg" customClass="RosterCellTableViewCell" customModule="Offical_Class_Roster" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="q6U-7B-jJg" id="ZPQ-L0-VTe">
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DtS-IH-m90">
+                                                    <rect key="frame" x="8" y="20" width="60" height="60"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="60" id="R1g-QD-a9a"/>
+                                                        <constraint firstAttribute="height" constant="60" id="y0c-R9-vQc"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u1D-D9-iUj">
+                                                    <rect key="frame" x="76" y="20" width="42" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="centerY" secondItem="DtS-IH-m90" secondAttribute="centerY" id="H3J-OD-Tyr"/>
+                                                <constraint firstItem="u1D-D9-iUj" firstAttribute="top" secondItem="DtS-IH-m90" secondAttribute="top" id="OdE-6n-9F1"/>
+                                                <constraint firstItem="u1D-D9-iUj" firstAttribute="leading" secondItem="DtS-IH-m90" secondAttribute="trailing" constant="8" id="PqW-oq-Zp0"/>
+                                                <constraint firstItem="DtS-IH-m90" firstAttribute="leading" secondItem="ZPQ-L0-VTe" secondAttribute="leadingMargin" id="xmL-Ps-Pg2"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="rosterImageView" destination="DtS-IH-m90" id="bx3-7H-IZW"/>
+                                            <outlet property="rosterLabel" destination="u1D-D9-iUj" id="SRo-gv-yYT"/>
                                             <segue destination="Sxo-Jh-dns" kind="show" identifier="ShowPersonDetail" id="HEX-ll-DUY"/>
                                         </connections>
                                     </tableViewCell>
@@ -40,9 +62,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="hXS-Lf-zU8" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="0Hi-y3-JhE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hXS-Lf-zU8" secondAttribute="trailing" constant="-16" id="0Hi-y3-JhE"/>
                             <constraint firstItem="hXS-Lf-zU8" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="YTh-go-Wr0"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="hXS-Lf-zU8" secondAttribute="trailing" constant="-16" id="f4s-LF-aXU"/>
+                            <constraint firstItem="hXS-Lf-zU8" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="f4s-LF-aXU"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Roster" id="Raa-Uh-cfI"/>

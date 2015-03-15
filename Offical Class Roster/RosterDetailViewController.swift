@@ -34,6 +34,7 @@ class RosterDetailViewController: UIViewController, UITextFieldDelegate, UIImage
         self.firstNameTextBox.text = selectedPerson.firstName
         self.lastNameTextBox.text = selectedPerson.lastName
         
+        //Bonus Work
         if self.selectedPerson.image == nil {
             self.imageView.image = UIImage(named: "smiley.png")
         } else {

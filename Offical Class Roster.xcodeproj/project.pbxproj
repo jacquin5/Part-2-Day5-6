@@ -18,6 +18,8 @@
 		01701BC71AA9A25800795F00 /* smiley.png in Resources */ = {isa = PBXBuildFile; fileRef = 01701BC61AA9A25800795F00 /* smiley.png */; };
 		01701BC91AABC13E00795F00 /* me.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01701BC81AABC13E00795F00 /* me.jpg */; };
 		01701BCB1AABC96300795F00 /* jordan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01701BCA1AABC96300795F00 /* jordan.jpg */; };
+		018273FB1AAFE3D200EFF5C7 /* RosterCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018273FA1AAFE3D200EFF5C7 /* RosterCellTableViewCell.swift */; };
+		018273FD1AAFF06100EFF5C7 /* Roster.plist in Resources */ = {isa = PBXBuildFile; fileRef = 018273FC1AAFF06100EFF5C7 /* Roster.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		01701BC61AA9A25800795F00 /* smiley.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smiley.png; sourceTree = "<group>"; };
 		01701BC81AABC13E00795F00 /* me.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = me.jpg; sourceTree = "<group>"; };
 		01701BCA1AABC96300795F00 /* jordan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jordan.jpg; sourceTree = "<group>"; };
+		018273FA1AAFE3D200EFF5C7 /* RosterCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RosterCellTableViewCell.swift; sourceTree = "<group>"; };
+		018273FC1AAFF06100EFF5C7 /* Roster.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Roster.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,7 @@
 				01701BBF1AA6ABD400795F00 /* Models */,
 				01701B9F1AA6AB9400795F00 /* AppDelegate.swift */,
 				01701BCA1AABC96300795F00 /* jordan.jpg */,
+				018273FC1AAFF06100EFF5C7 /* Roster.plist */,
 				01701BC61AA9A25800795F00 /* smiley.png */,
 				01701BC81AABC13E00795F00 /* me.jpg */,
 				01701BA61AA6AB9400795F00 /* Images.xcassets */,
@@ -130,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				01701BC21AA6AC1400795F00 /* Person.swift */,
+				018273FA1AAFE3D200EFF5C7 /* RosterCellTableViewCell.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -231,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				018273FD1AAFF06100EFF5C7 /* Roster.plist in Resources */,
 				01701BC91AABC13E00795F00 /* me.jpg in Resources */,
 				01701BC71AA9A25800795F00 /* smiley.png in Resources */,
 				01701BA51AA6AB9400795F00 /* Main.storyboard in Resources */,
@@ -254,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				018273FB1AAFE3D200EFF5C7 /* RosterCellTableViewCell.swift in Sources */,
 				01701BC51AA6B89500795F00 /* RosterDetailViewController.swift in Sources */,
 				01701BC31AA6AC1400795F00 /* Person.swift in Sources */,
 				01701BA21AA6AB9400795F00 /* ViewController.swift in Sources */,
